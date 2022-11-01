@@ -21,9 +21,37 @@
     <title>Frontend Mentor | Expenses chart component</title>
   </head>
   <body>
-    My balance $921.48 Spending - Last 7 days mon tue wed thu fri sat sun Total
-    this month $478.33 +2.4% from last month
-
-    <p class="bg-red-700">jemmy</p>
+    <main class="min-h-screen flex justify-center items-center bg-Cream">
+      <section class="flex flex-col w-[18.75rem] space-y-5">
+        <header
+          class="bg-softRed flex justify-between items-center p-3 rounded-xl"
+        >
+          <hgroup class="text-veryPaleOrange space-y-[.2rem]">
+            <p class="small-text">My balance</p>
+            <h2 class="text-lg font-bold">$921.48</h2>
+          </hgroup>
+          <figure>
+            <img src="images/logo.svg" alt="" class="w-10" />
+          </figure>
+        </header>
+        <section
+          class="bg-veryPaleOrange flex flex-col space-y-5 p-5 rounded-xl"
+        >
+          <h2>Spending -Last 7 days</h2>
+          <div class="bg-red-500 w-full h-20 mt-6"></div>
+          <hr />
+          <section class="flex justify-between">
+            <hgroup>
+              <p class="small-text">Total this month</p>
+              <h1 class="text-3xl font-bold">$478.33</h1>
+            </hgroup>
+            <hgroup class="self-end">
+              <p class="font-bold">+2.4%</p>
+              <p class="small-text">from last month</p>
+            </hgroup>
+          </section>
+        </section>
+      </section>
+    </main>
   </body>
 </html>
