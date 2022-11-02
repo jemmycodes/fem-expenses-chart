@@ -17,7 +17,8 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="css/styles.css" />
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" type="module" defer></script>
     <title>Frontend Mentor | Expenses chart component</title>
   </head>
   <body>
@@ -37,8 +38,8 @@
         <section
           class="bg-veryPaleOrange flex flex-col space-y-5 p-5 rounded-xl"
         >
-          <h2>Spending -Last 7 days</h2>
-          <div class="bg-red-500 w-full h-20 mt-6"></div>
+          <h2 class="font-bold text-xl">Spending - Last 7 days</h2>
+          <canvas id="myChart" style="width: 100%; max-width: 100%"></canvas>
           <hr />
           <section class="flex justify-between">
             <hgroup>
